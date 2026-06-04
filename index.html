@@ -18,13 +18,16 @@
     --muted:#64748b;
     --border:#e2e8f0;
     --primary:#0f766e;
-    --primary-light:#ccfbf1;
 }
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -49,23 +52,33 @@ body{
     font-size:clamp(3rem,6vw,5rem);
     font-weight:800;
     margin-bottom:16px;
+    line-height:1.1;
 }
 
 .hero .subtitle{
-    font-size:1.35rem;
+    font-size:1.15rem;
     color:var(--muted);
     max-width:800px;
     margin:0 auto 40px;
 }
 
 .cta{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     background:var(--primary);
     color:white;
     text-decoration:none;
-    padding:16px 28px;
+    padding:18px 32px;
     border-radius:14px;
     font-weight:600;
+    min-height:56px;
+    transition:.25s;
+}
+
+.cta:hover{
+    transform:translateY(-2px);
+    opacity:.95;
 }
 
 .section{
@@ -119,6 +132,51 @@ footer{
     text-align:center;
     color:var(--muted);
 }
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .container{
+        padding:0 20px;
+    }
+
+    .hero{
+        padding:80px 0 60px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero .subtitle{
+        font-size:1rem;
+        margin-bottom:24px;
+    }
+
+    .section{
+        padding:60px 0;
+    }
+
+    .section-title{
+        font-size:1.6rem;
+        margin-bottom:28px;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    .about{
+        font-size:1rem;
+    }
+
+    .cta{
+        width:100%;
+        max-width:320px;
+        margin:0 auto;
+    }
+}
 </style>
 
 </head>
@@ -127,9 +185,10 @@ footer{
 
 <section class="hero">
     <div class="container">
-        <h1>Cooperativismo Notebook</h1>
 
 ```
+    <h1>Cooperativismo Notebook</h1>
+
     <p class="subtitle">
         de Oliver Ayala
     </p>
@@ -138,15 +197,16 @@ footer{
         Un espacio para explorar, comprender y aplicar el conocimiento cooperativo mediante cápsulas educativas, recursos especializados y herramientas interactivas.
     </p>
 
-    <a href="#" class="cta">
-        Explorar Notebook
+    <a href="#dominios" class="cta">
+        Explorar Dominios
     </a>
+
 </div>
 ```
 
 </section>
 
-<section class="section">
+<section class="section" id="dominios">
     <div class="container">
 
 ```
@@ -187,6 +247,7 @@ footer{
         </div>
 
     </div>
+
 </div>
 ```
 
