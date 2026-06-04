@@ -55,6 +55,12 @@ body{
     line-height:1.1;
 }
 
+.hero .author{
+    color:var(--muted);
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
 .hero .subtitle{
     font-size:1.15rem;
     color:var(--muted);
@@ -133,8 +139,6 @@ footer{
     color:var(--muted);
 }
 
-/* MOBILE */
-
 @media (max-width:768px){
 
     .container{
@@ -147,6 +151,10 @@ footer{
 
     .hero h1{
         font-size:2.5rem;
+    }
+
+    .hero .author{
+        font-size:1rem;
     }
 
     .hero .subtitle{
@@ -189,8 +197,8 @@ footer{
 ```
     <h1>Cooperativismo Notebook</h1>
 
-    <p class="subtitle">
-        de Oliver Ayala
+    <p class="author">
+        Oliver Ayala · <strong>Facilitador CHC</strong>
     </p>
 
     <p class="subtitle">
@@ -218,32 +226,37 @@ footer{
 
         <div class="card">
             <h3>Básico</h3>
-            <p>Fundamentos del cooperativismo y principios esenciales.</p>
+            <p>Fundamentos del cooperativismo, principios, valores e identidad cooperativa.</p>
         </div>
 
         <div class="card">
             <h3>Gobernabilidad</h3>
-            <p>Estructuras, participación y toma de decisiones.</p>
+            <p>Estructuras de gobierno, participación, representación y toma de decisiones.</p>
         </div>
 
         <div class="card">
             <h3>Legislación</h3>
-            <p>Interpretación y aplicación de la normativa cooperativa.</p>
+            <p>Interpretación y aplicación de la normativa cooperativa y marcos regulatorios.</p>
         </div>
 
         <div class="card">
             <h3>Funciones de los Cuerpos Directivos</h3>
-            <p>Roles, responsabilidades y relaciones institucionales.</p>
+            <p>Roles, responsabilidades y relaciones entre los órganos de dirección y control.</p>
         </div>
 
         <div class="card">
             <h3>Administración de Asambleas</h3>
-            <p>Convocatoria, quórum, acuerdos y procesos asamblearios.</p>
+            <p>Convocatorias, quórum, deliberación, acuerdos y gestión de asambleas.</p>
         </div>
 
         <div class="card">
             <h3>Liderazgo con Perspectiva de Género</h3>
-            <p>Participación inclusiva y fortalecimiento del liderazgo cooperativo.</p>
+            <p>Participación inclusiva y fortalecimiento del liderazgo cooperativo con enfoque de equidad.</p>
+        </div>
+
+        <div class="card">
+            <h3>Incidencia Política</h3>
+            <p>Participación, representación y articulación del movimiento cooperativo en espacios públicos y de decisión.</p>
         </div>
 
     </div>
@@ -282,10 +295,10 @@ footer{
 
     <div class="about">
         Este notebook organiza contenidos sobre cooperativismo,
-        gobernabilidad y liderazgo desde una perspectiva práctica,
-        modular y orientada al aprendizaje continuo. Los contenidos
-        están diseñados para facilitar la consulta, la formación
-        y la aplicación en contextos reales de las cooperativas.
+        gobernabilidad, legislación, liderazgo e incidencia política
+        desde una perspectiva práctica, modular y orientada al aprendizaje continuo.
+        Los contenidos están diseñados para facilitar la consulta,
+        la formación y la aplicación en contextos reales de las cooperativas.
     </div>
 
 </div>
@@ -296,7 +309,7 @@ footer{
 <footer>
     <div class="container">
         <strong>Cooperativismo Notebook</strong><br>
-        Oliver Ayala
+        Oliver Ayala · Facilitador CHC
     </div>
 </footer>
 
